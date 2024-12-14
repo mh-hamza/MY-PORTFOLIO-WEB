@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Github, Linkedin, Mail, Sun, Moon,Code2 } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext.jsx'; 
+import { Menu, X, Github, Linkedin, Mail, Sun, Moon, Code2 } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext.jsx';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme(); 
+  const { theme, toggleTheme } = useTheme();
+
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="fixed w-full top-0  dark:bg-gray-900/30  bg-white/80 backdrop-blur-sm z-50">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-blue-600 dark:text-blue-500" />
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-300 text-transparent bg-clip-text">
               Portfolio
@@ -20,7 +22,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-center space-x-8">
-            <NavLinks />
+            <NavLinks closeMenu={closeMenu} />
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -35,7 +37,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-gray-500 dark:text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -46,11 +48,11 @@ const Header = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             className="md:hidden py-4"
           >
             <div className="flex flex-col space-y-4">
-              <NavLinks />
+              <NavLinks closeMenu={closeMenu} />
               <div className="flex justify-center space-x-4">
                 <SocialLinks />
               </div>
@@ -68,13 +70,14 @@ const Header = () => {
   );
 };
 
-const NavLinks = () => (
+const NavLinks = ({ closeMenu }) => (
   <>
     {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
       <motion.a
         key={item}
         href={`#${item.toLowerCase()}`}
         whileHover={{ scale: 1.1 }}
+        onClick={closeMenu} // Close menu on link click
         className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
       >
         {item}
@@ -86,7 +89,7 @@ const NavLinks = () => (
 const SocialLinks = () => (
   <div className="flex items-center space-x-4">
     <motion.a
-      href="https://github.com"
+      href="https://github.com/mh-hamza"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.2 }}
@@ -95,7 +98,7 @@ const SocialLinks = () => (
       <Github size={20} />
     </motion.a>
     <motion.a
-      href="https://linkedin.com"
+      href="https://www.linkedin.com/in/mh-hamza444/"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.2 }}
@@ -104,7 +107,7 @@ const SocialLinks = () => (
       <Linkedin size={20} />
     </motion.a>
     <motion.a
-      href="mailto:contact@example.com"
+      href="mailto:mhdkh444@gmail.com"
       whileHover={{ scale: 1.2 }}
       className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
     >

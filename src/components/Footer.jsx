@@ -45,7 +45,7 @@ const Footer = () => {
 const SocialLinks = () => (
   <div className="flex items-center space-x-4">
     <motion.a
-      href="https://github.com"
+      href="https://github.com/mh-hamza"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.2 }}
@@ -54,7 +54,7 @@ const SocialLinks = () => (
       <Github size={20} />
     </motion.a>
     <motion.a
-      href="https://linkedin.com"
+      href="https://www.linkedin.com/in/mh-hamza444/"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.2 }}
@@ -63,7 +63,7 @@ const SocialLinks = () => (
       <Linkedin size={20} />
     </motion.a>
     <motion.a
-      href="mailto:contact@example.com"
+      href="mailto:mhdkh444@gmail.com"
       whileHover={{ scale: 1.2 }}
       className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
     >

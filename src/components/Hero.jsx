@@ -1,17 +1,8 @@
 import React from "react";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
-
+import { motion } from 'framer-motion';
 export function Hero() {
-  const SocialLink = ({ href, icon: Icon, label }) => (
-    <a
-      href={href}
-      aria-label={label}
-      className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 transition-colors duration-200"
-    >
-      <Icon className="h-6 w-6" />
-    </a>
-  );
-
+ 
   return (
     <section
       id="home"
@@ -45,21 +36,7 @@ export function Hero() {
             </p>
 
             <div className="flex justify-center space-x-6 mt-8">
-              <SocialLink
-                href="https://github.com"
-                icon={Github}
-                label="GitHub"
-              />
-              <SocialLink
-                href="https://linkedin.com"
-                icon={Linkedin}
-                label="LinkedIn"
-              />
-              <SocialLink
-                href="mailto:your.email@example.com"
-                icon={Mail}
-                label="Email"
-              />
+              <SocialLinks/>
             </div>
 
             <div className="mt-12">
@@ -79,3 +56,33 @@ export function Hero() {
 }
 
 export default Hero;
+
+const SocialLinks = () => (
+  <div className="flex items-center space-x-4">
+    <motion.a
+      href="https://github.com/mh-hamza"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.2 }}
+      className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+    >
+      <Github size={20} />
+    </motion.a>
+    <motion.a
+      href="https://www.linkedin.com/in/mh-hamza444/"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.2 }}
+      className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+    >
+      <Linkedin size={20} />
+    </motion.a>
+    <motion.a
+      href="mailto:mhdkh444@gmail.com"
+      whileHover={{ scale: 1.2 }}
+      className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+    >
+      <Mail size={20} />
+    </motion.a>
+  </div>
+);

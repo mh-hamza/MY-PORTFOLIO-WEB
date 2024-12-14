@@ -4,11 +4,11 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with real-time inventory management",
+    title: "URL Shortner",
+    description: "Full-stack Url shortner app with click location device analysis",
     image:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Node.js", "MongoDB", "Redux"],
+    tech: ["React", "Node.js", "MongoDB", "Express"],
     github: "#",
     live: "#",
   },
@@ -22,20 +22,20 @@ const projects = [
     live: "#",
   },
   {
-    title: "Social Media Dashboard",
+    title: "Ayush Pathology Lab ",
     description: "Analytics dashboard for social media management",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Express", "Chart.js"],
+    tech: ["React", "Firebase"],
     github: "#",
     live: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Task Manager",
     description: "Full-stack e-commerce solution with real-time inventory management",
     image:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Node.js", "MongoDB", "Redux"],
+    tech: ["React", "Firebase"],
     github: "#",
     live: "#",
   },
@@ -49,11 +49,11 @@ const projects = [
     live: "#",
   },
   {
-    title: "Social Media Dashboard",
+    title: "Space Website",
     description: "Analytics dashboard for social media management",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Express", "Chart.js"],
+    tech: ["React", "Tailwind CSS", "AOS Animation"],
     github: "#",
     live: "#",
   },
