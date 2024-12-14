@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./components/Header";
-import Projects from "./components/Project";
-import Skills from "./components/Skills";
-import Hero from "./components/Hero";
-import AboutMe from "./components/Aboutme";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
+import Projects from "./components/Project.jsx";
+import Skills from "./components/Skills.jsx";
+import Hero from "./components/Hero.jsx";
+import AboutMe from "./components/AboutMe.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
