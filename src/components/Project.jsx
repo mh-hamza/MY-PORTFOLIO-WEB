@@ -52,7 +52,7 @@ const projects = [
     "title": "Old Portfolio",
     "description": "A personal, fully responsive portfolio website with smooth AOS animations with a modern design.",
     "image": port6,
-    "tech": ["HTML", "CSS", "JavaScript", "AOS animation "],
+    "tech": ["HTML", "CSS", "JavaScript", "AOS animation"],
     "github": "#",
     "live": "#"
   }
