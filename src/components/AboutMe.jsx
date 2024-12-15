@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
-import { User, Briefcase, School, Heart } from "lucide-react";
+import { User, Briefcase, School, Heart, Flame } from "lucide-react";  // Imported a new icon (Flame)
 import myImage from "../assets/profileImage.jpg"
+
 // Custom hook for intersection observer
 function useIntersectionObserver() {
   const [isVisible, setIsVisible] = useState(false);
@@ -55,6 +56,13 @@ const AboutMe = () => {
       description:
         "When I'm not coding, I love hiking, photography, exploring new technologies, and reading tech blogs to stay updated with the latest trends.",
     },
+    // New "Passion" section added
+    {
+      title: "Passion",
+      icon: <Flame className="h-8 w-8 text-orange-600 dark:text-orange-400" />,  // Using Flame icon
+      description:
+        "I am deeply passionate about creating impactful digital experiences. The constant challenge of solving problems through code keeps me excited and motivated every day.",
+    }
   ];
 
   return (
