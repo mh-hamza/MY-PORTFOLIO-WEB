@@ -8,6 +8,7 @@ import {
   GitBranch,
   Terminal,
   Braces,
+  Flame,
 } from "lucide-react";
 import waveImage from "../assets/03867548d25035d175d00b6a2084e27b.gif";
 // Custom hook for intersection observer
@@ -98,9 +99,9 @@ const Skills = () => {
       description: "Server-side JavaScript & runtime environment",
     },
     {
-      name: "TypeScript",
-      icon: Braces,
-      description: "Type-safe JavaScript development",
+      name: "Firebase",
+      icon: Flame,
+      description: "Real-time database & Auth services",
     },
     {
       name: "Git",

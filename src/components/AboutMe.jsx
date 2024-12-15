@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { User, Briefcase, School, Heart, Flame } from "lucide-react";  // Imported a new icon (Flame)
+import { User, Briefcase, School, Heart, Flame } from "lucide-react"; 
 import myImage from "../assets/profileImage.jpg"
 
 // Custom hook for intersection observer
@@ -42,27 +42,26 @@ const AboutMe = () => {
       title: "Experience",
       icon: <Briefcase className="h-8 w-8 text-green-600 dark:text-green-400" />,
       description:
-        "With over 2 years of experience in full-stack web development, I have worked on several projects involving front-end and back-end technologies.",
+        "With over 2 years of experience in HTML, CSS, JavaScript, and the MERN stack, I have worked on several projects involving front-end and back-end technologies.",
     },
     {
       title: "Education",
       icon: <School className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />,
       description:
-        "I hold a Bachelor's degree in Computer Science and have specialized in web development, data structures, and algorithms.",
+        "I have completed my 10th grade in high school and am currently pursuing my 12th grade (Intermediate) education in science, focusing on computer science and web development.",
     },
     {
       title: "Hobbies",
       icon: <Heart className="h-8 w-8 text-red-600 dark:text-red-400" />,
       description:
-        "When I'm not coding, I love hiking, photography, exploring new technologies, and reading tech blogs to stay updated with the latest trends.",
+        "When I'm not coding, I enjoy photography, gaming, exploring new technologies, and learning new programming skills to stay updated with the latest trends.",
     },
-    // New "Passion" section added
     {
       title: "Passion",
-      icon: <Flame className="h-8 w-8 text-orange-600 dark:text-orange-400" />,  // Using Flame icon
+      icon: <Flame className="h-8 w-8 text-orange-600 dark:text-orange-400" />,
       description:
         "I am deeply passionate about creating impactful digital experiences. The constant challenge of solving problems through code keeps me excited and motivated every day.",
-    }
+    },
   ];
 
   return (

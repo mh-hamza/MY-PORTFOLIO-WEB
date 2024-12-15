@@ -13,7 +13,7 @@ const Footer = () => {
             className="mb-8 md:mb-0"
           >
             <h3 className="text-2xl font-bold mb-2">Mohammad Hamza</h3>
-            <p className="text-gray-600 dark:text-gray-400">Building the web, one line at a time</p>
+            <p className="text-gray-600 dark:text-gray-400">Building the digital world, one line of code at a time.</p>
           </motion.div>
 
           <motion.div
@@ -33,7 +33,7 @@ const Footer = () => {
           className="mt-8 pt-8 border-t text-center"
           style={{ borderColor: '#E2E8F0' }}
         >
-          <p className="text-gray-400 dark:text-gray-700">
+          <p className="text-gray-400 dark:text-gray-300">
             &copy; {new Date().getFullYear()} mohammadhamza.in All rights reserved.
           </p>
         </motion.div>

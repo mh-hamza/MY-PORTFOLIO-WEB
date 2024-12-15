@@ -1,67 +1,67 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Github, ExternalLink } from "lucide-react";
-
+import port1 from "../assets/port1.jpeg"
+import port2 from "../assets/port2.jpeg"
+import port3 from "../assets/port3.jpeg"
+import port4 from "../assets/port4.jpeg"
+import port5 from "../assets/port5.jpeg"
+import port6 from "../assets/port6.jpeg"
 const projects = [
   {
-    title: "URL Shortner",
-    description: "Full-stack Url shortner app with click location device analysis",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    github: "#",
-    live: "#",
+    "title": "URL Shortner",
+    "description": "A full-stack URL shortener app with click tracking, user location, device information, and the ability to create custom URLs, providing detailed analytics on link interactions.",
+    "image": port1,
+    "tech": ["React", "Node.js", "MongoDB", "Express"],
+    "github": "#",
+    "live": "#"
   },
   {
-    title: "Task Management System",
-    description: "Collaborative task management tool with real-time updates",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["MERN Stack", "Socket.io", "JWT"],
-    github: "#",
-    live: "#",
+    "title": "Ayush Pathology Lab",
+    "description": "A collaborative task management tool with real-time updates and an admin panel for CRUD operations on reports. Also includes an appointment system for clients.",
+    "image": port2,
+    "tech": ["React", "Firebase", "Tailwind CSS"],
+    "github": "#",
+    "live": "#"
   },
   {
-    title: "Ayush Pathology Lab ",
-    description: "Analytics dashboard for social media management",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Firebase"],
-    github: "#",
-    live: "#",
+    "title": "College Web",
+    "description":  "A responsive website for the college with real-time features, an admin panel for managing school data, and an online admission system, built using React and Firebase.",
+    "image": port3,
+    "tech": ["React", "Firebase"],
+    "github": "#",
+    "live": "#"
   },
   {
-    title: "Task Manager",
-    description: "Full-stack e-commerce solution with real-time inventory management",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Firebase"],
-    github: "#",
-    live: "#",
+    "title": "Space Web",
+    "description": "UI-only model of a space-themed website showcasing modern design with AOS animations, without any functional backend.",
+    "image": port4,
+    "tech": ["React", "Tailwind CSS", "AOS animation"],
+    "github": "#",
+    "live": "#"
   },
   {
-    title: "Task Management System",
-    description: "Collaborative task management tool with real-time updates",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["MERN Stack", "Socket.io", "JWT"],
-    github: "#",
-    live: "#",
+    "title": "Task Manager Todo",
+    "description": "A task management app with real-time updates, built with React and Firebase, allowing users to manage tasks efficiently.",
+    "image": port5,
+    "tech": ["React", "Firebase"],
+    "github": "#",
+    "live": "#"
   },
   {
-    title: "Space Website",
-    description: "Analytics dashboard for social media management",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    tech: ["React", "Tailwind CSS", "AOS Animation"],
-    github: "#",
-    live: "#",
-  },
+    "title": "Old Portfolio",
+    "description": "A personal, fully responsive portfolio website with smooth AOS animations with a modern design.",
+    "image": port6,
+    "tech": ["HTML", "CSS", "JavaScript", "AOS animation"],
+    "github": "#",
+    "live": "#"
+  }
 ];
+
 
 const Projects = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    // triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -105,7 +105,7 @@ const ProjectCard = ({ project, index, inView }) => (
       <img
         src={project.image || "https://via.placeholder.com/400x300"}
         alt={project.title || "Project Image"}
-        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110 object-top"
         loading="lazy"
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
