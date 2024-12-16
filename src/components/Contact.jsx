@@ -55,12 +55,12 @@ function Contact() {
               className="space-y-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Let&apos;s talk about everything!
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Feel free to reach out if you&apos;re looking for a developer, have a
-                question, or just want to connect.
-              </p>
+  Let&apos;s Connect!
+</h3>
+<p className="text-gray-600 dark:text-gray-300">
+  If you're looking for a developer, have a question, or want to discuss ideas, feel free to reach out. I&apos;m always open to connecting!
+</p>
+
 
               <div className="space-y-4">
                 <ContactInfo
