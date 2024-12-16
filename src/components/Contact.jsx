@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 function Contact() {
-  
   const [result, setResult] = React.useState("");
   const [isError, setIsError] = React.useState(false);
 
@@ -55,24 +54,31 @@ function Contact() {
               className="space-y-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-  Let&apos;s Connect!
-</h3>
-<p className="text-gray-600 dark:text-gray-300">
-  If you're looking for a developer, have a question, or want to discuss ideas, feel free to reach out. I&apos;m always open to connecting!
-</p>
-
+                Let&apos;s Connect!
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                If you're looking for a developer, have a question, or want to
+                discuss ideas, feel free to reach out. I&apos;m always open to
+                connecting!
+              </p>
 
               <div className="space-y-4">
                 <ContactInfo
-                  icon={<Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />}
+                  icon={
+                    <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  }
                   text="mhdkh444@gmail.com"
                 />
                 <ContactInfo
-                  icon={<Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />}
+                  icon={
+                    <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  }
                   text="+91 6393588539"
                 />
                 <ContactInfo
-                  icon={<MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />}
+                  icon={
+                    <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  }
                   text="Jaunpur, Uttar Pradesh, INDIA"
                 />
               </div>
