@@ -26,7 +26,7 @@ const projects = [
   },
   {
     "title": "College Web",
-    "description":  "A responsive website for the college with real-time features, an admin panel for managing school data, and an online admission system, built using React and Firebase.",
+    "description": "A responsive website for the college with real-time features, an admin panel for managing school data, and an online admission system, built using React and Firebase.",
     "image": port3,
     "tech": ["React", "Firebase"],
     "github": "https://sgsic-demo.netlify.app/",
@@ -75,8 +75,8 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-2xl md:text-3xl pl-2 mb-8 border-l-4  font-sans font-bold border-blue-600 dark:text-white text-gray-900">
-          Featured Projects
-        </h1>
+            Featured Projects
+          </h1>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
