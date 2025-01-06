@@ -1,7 +1,7 @@
 import React from "react";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
-
+import Resume from '../assets/Mohammad Hamza Resume.pdf'
 export function Hero() {
   return (
     <section
@@ -94,10 +94,11 @@ export function Hero() {
               className="mt-12"
             >
               <a
-                href="#about"
+                href={Resume}
+                target="_blank"
                 className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200"
               >
-                <span>Learn more about me</span>
+                <span>Download Resume</span>
                 <ArrowDown className="h-4 w-4 animate-bounce" />
               </a>
             </motion.div>
