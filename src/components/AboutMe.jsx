@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { User, Briefcase, School, Heart, Flame } from "lucide-react"; 
+import { User, Briefcase, School, Heart, Flame } from "lucide-react";
 import myImage from "../assets/profileImage.jpg"
 
 // Custom hook for intersection observer
@@ -48,7 +48,7 @@ const AboutMe = () => {
       title: "Education",
       icon: <School className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />,
       description:
-        "I have completed my 10th grade in high school and am currently pursuing my 12th grade (Intermediate) education in science, focusing on computer science and web development.",
+        "I have completed my High Schooland & Intermediate from SGSIC Samodhpur. Currently, I am pursuing a Bachelor of Computer Applications from Dr. Ram Manohar Lohia Avadh University.",
     },
     {
       title: "Hobbies",
@@ -110,9 +110,8 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
   return (
     <div
       ref={elementRef}
-      className={`${className} transition-all duration-700 ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`${className} transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
