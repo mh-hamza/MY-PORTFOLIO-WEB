@@ -65,9 +65,8 @@ function AnimatedSection({ children, className = "", delay = 0 }) {
   return (
     <div
       ref={elementRef}
-      className={`${className} transition-all duration-700 ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`${className} transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
@@ -124,7 +123,7 @@ const Skills = () => {
     <div id="skills" className=" bg-white dark:bg-gray-800 w-full py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <h1 className="text-2xl md:text-3xl pl-2 mb-8 border-l-4  font-sans font-bold border-blue-600 dark:text-white text-gray-900">
-        What I Know
+          What I Know
         </h1>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {skills.map((skill, index) => (
