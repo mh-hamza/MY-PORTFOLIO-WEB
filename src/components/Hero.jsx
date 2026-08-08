@@ -276,10 +276,10 @@ export function Hero() {
             </motion.div>
           </motion.div>
         </div>
+        {/* Decorative code snippet — large screens only */}
+        <CodeSnippet />
       </div>
 
-      {/* Decorative code snippet — large screens only */}
-      <CodeSnippet />
 
       {/* Scroll mouse indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
