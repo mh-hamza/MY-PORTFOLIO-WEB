@@ -89,8 +89,8 @@ async function handleLocation() {
 // ─── Component ───────────────────────────────────────────────────────────────
 const WELCOME = [
   { type: 'output', text: '┌─────────────────────────────────────────────┐' },
-  { type: 'output', text: "│     Welcome to Mohammad Hamza's terminal     │" },
-  { type: 'output', text: '│       Type "help" to see all commands.       │' },
+  { type: 'output', text: "│     Welcome to Mohammad Hamza's terminal    │" },
+  { type: 'output', text: '│       Type "help" to see all commands.      │' },
   { type: 'output', text: '└─────────────────────────────────────────────┘' },
 ];
 
@@ -249,11 +249,10 @@ const TerminalSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className={`w-full rounded-xl overflow-hidden shadow-lg border flex flex-col font-mono text-sm leading-relaxed cursor-text ${
-            isDark ? 'bg-[#0d1117] border-[#30363d] text-[#c9d1d9]' : 'bg-[#1e2433] border-[#394060] text-[#cdd6f4]'
-          }`}
+          className={`w-full rounded-xl overflow-hidden shadow-lg border flex flex-col font-mono text-sm leading-relaxed cursor-text ${isDark ? 'bg-[#0d1117] border-[#30363d] text-[#c9d1d9]' : 'bg-[#1e2433] border-[#394060] text-[#cdd6f4]'
+            }`}
           onClick={handleWindowClick}
-          style={{ height: '400px' }}
+          style={{ height: '450px' }}
         >
           {/* Title Bar */}
           <div className="flex items-center justify-between px-4 py-2.5 bg-black/20 border-b border-white/5 select-none shrink-0">
@@ -267,7 +266,7 @@ const TerminalSection = () => {
           </div>
 
           {/* Terminal Console Output body */}
-          <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-1.5" ref={outputRef}>
+          <div className="flex-1 overflow-y-auto custom-scrollbar p-4 flex flex-col gap-1.5" ref={outputRef}>
             {lines.map((line, i) => {
               if (line.type === 'input') {
                 return (

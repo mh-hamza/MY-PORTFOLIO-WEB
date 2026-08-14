@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const SOCIAL = [
-  { href: 'https://github.com/mh-hamza',              Icon: Github,   label: 'GitHub'   },
+  { href: 'https://github.com/mh-hamza', Icon: Github, label: 'GitHub' },
   { href: 'https://www.linkedin.com/in/mh-hamza444/', Icon: Linkedin, label: 'LinkedIn' },
-  { href: 'mailto:mhdkh444@gmail.com',                Icon: Mail,     label: 'Email'    },
+  { href: 'mailto:mhdkh444@gmail.com', Icon: Mail, label: 'Email' },
 ];
 
 const Footer = () => {
@@ -55,11 +55,11 @@ const Footer = () => {
           className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center space-y-2"
         >
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Built with <span className="text-blue-600 dark:text-blue-400 font-medium">React</span>,{' '}
-            <span className="text-blue-600 dark:text-blue-400 font-medium">Tailwind CSS</span> &amp; a lot of coffee ☕
+            Designed &amp; Developed with <span className="text-blue-600 dark:text-blue-400">💙</span> by{' '}
+            <span className="text-blue-600 dark:text-blue-400 font-semibold">Mohammad Hamza</span>
           </p>
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            &copy; {new Date().getFullYear()} mohammadhamza.in — All rights reserved.
+          <p className="text-xs text-gray-400 dark:text-gray-500">
+            &copy; {new Date().getFullYear()} Mohammad Hamza. All rights reserved.
           </p>
         </motion.div>
       </div>
