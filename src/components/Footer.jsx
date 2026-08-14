@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const SOCIAL = [
-  { href: 'https://github.com/mh-hamza',              Icon: Github,   label: 'GitHub'   },
+  { href: 'https://github.com/mh-hamza', Icon: Github, label: 'GitHub' },
   { href: 'https://www.linkedin.com/in/mh-hamza444/', Icon: Linkedin, label: 'LinkedIn' },
-  { href: 'mailto:mhdkh444@gmail.com',                Icon: Mail,     label: 'Email'    },
+  { href: 'mailto:mhdkh444@gmail.com', Icon: Mail, label: 'Email' },
 ];
 
 const Footer = () => {
